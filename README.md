@@ -17,7 +17,7 @@ npm i --save react-native-cache-store
 API Reference
 ---
 
-- `set(key, value, [time])` - Stores the value. Expires after specified number of **minutes**.
+- `set(key, value, [time])` - Stores the value. Expires after specified number of **seconds**.
 
   1. `key` (string)
   2. `value` (Object | string)
@@ -45,7 +45,7 @@ Example Usage
 ``` js
 import CacheStore from 'react-native-cache-store';
 
-CacheStore.set('key', 'value', 10); // Expires in 10 minutes
+CacheStore.set('key', 'value', 10); // Expires in 10 seconds
 
 CacheStore.get('key').then((value) => {
   // Do something with value
