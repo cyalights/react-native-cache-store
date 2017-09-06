@@ -6,7 +6,7 @@ import { AsyncStorage } from 'react-native';
 
 const CACHE_PREFIX = 'cachestore-';
 const CACHE_EXPIRATION_PREFIX = 'cacheexpiration-';
-const EXPIRY_UNITS = 60 * 1000; // Time resolution in minutes
+const EXPIRY_UNITS = 1000; // Time resolution in seconds
 
 function currentTime(){
   return Math.floor((new Date().getTime())/EXPIRY_UNITS);
